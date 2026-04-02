@@ -29,3 +29,5 @@ print("Top 3 sales records")
 df.orderBy(col("Sales").desc()).show(3)
 
 spark.stop()
+
+print(f"Hey! App is closed!")
