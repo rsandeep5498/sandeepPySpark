@@ -21,7 +21,7 @@ print("Adding Bonus Column")
 df_bonus = df.withColumn("Bonus", col("Salary") * 0.10)
 df_bonus.show()
 
-print("Top 3 Highest Paid Employees")
+print("Top 2 Highest Paid Employees")
 df.orderBy(col("Salary").desc()).show(3)
 
 spark.stop()
